@@ -15,7 +15,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import {login} from "../Services/login";
 import Loader from "../Spinner/Spinner";
 import {AuthContext} from "../../Contexts/Auth/Auth";
-import {Copyright, SubmitButton} from "../../StyledComps/StyledComps";
+import {Copyright, SubmitButton} from "../../assets/StyledComps";
 
 
 const useStyles = makeStyles((theme) => ({

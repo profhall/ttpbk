@@ -6,7 +6,7 @@ import Loader from "../Spinner/Spinner";
 import {AuthContext} from "../../Contexts/Auth/Auth";
 import app from "../../fbase_info";
 import {GridItem, Sheet, HomeContainer} from "./styled";
-import {SubmitButton} from "../../StyledComps/StyledComps";
+import {SubmitButton} from "../../assets/StyledComps";
 import colors from "../../Styles/Colors";
 
 
@@ -34,18 +34,12 @@ function Home() {
     return (
 
         <HomeContainer container spacing={3}>
-                {currentUser?
-                    <SubmitButton
-                        onClick={()=> app.auth().signOut()}
 
-                    >
-                        Sign Out
-                    </SubmitButton>:
-                    <SubmitButton onClick={()=>navigate("/login")}>Login</SubmitButton>}
 
             <Hero item xs={12} height={"50%"}>
                 <Sheet bgphoto={"https://source.unsplash.com/user/moniqa"}>
                     xs=12
+
                 </Sheet>
             </Hero>
 

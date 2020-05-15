@@ -1,6 +1,6 @@
 import React, {useContext, useState, useEffect} from 'react';
 import './App.css';
-import Login from "./components/Login/Login";
+import Checkout from "./components/Paypal/Checkout";
 import {useRoutes, setBasepath, useRedirect, navigate} from 'hookrouter';
 
 import Routes from "./Routes";
@@ -26,7 +26,6 @@ function App() {
     return (
         <div className="App">
             <TopBar/>
-            <SideBar/>
             {routeResult || null }
         </div>
     );
